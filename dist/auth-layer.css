@@ -1,0 +1,210 @@
+body.gc-auth-pending #root,
+body.gc-auth-blocked #root {
+  display: none !important;
+}
+
+#gc-auth-root {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.gc-auth-screen {
+  align-items: center;
+  background: #f2f4f8;
+  color: #0d1117;
+  display: flex;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.gc-auth-panel {
+  background: #ffffff;
+  border: 1px solid #dde2ec;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px #0d11171a;
+  margin: 0 auto;
+  max-width: 420px;
+  padding: 24px;
+  width: 100%;
+}
+
+.gc-auth-logo {
+  align-items: center;
+  background: #4f6aff;
+  border-radius: 8px;
+  color: #ffffff;
+  display: flex;
+  font-size: 18px;
+  font-weight: 900;
+  height: 40px;
+  justify-content: center;
+  margin-bottom: 18px;
+  width: 40px;
+}
+
+.gc-auth-title {
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.gc-auth-copy {
+  color: #5f6f88;
+  font-size: 14px;
+  margin: 0 0 20px;
+}
+
+.gc-auth-field {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.gc-auth-label {
+  color: #3a4455;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.gc-auth-input {
+  background: #f8fafc;
+  border: 1px solid #c8d0de;
+  border-radius: 7px;
+  color: #0d1117;
+  font-size: 14px;
+  outline: none;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.gc-auth-input:focus {
+  border-color: #4f6aff;
+  box-shadow: 0 0 0 3px #4f6aff22;
+}
+
+.gc-auth-button {
+  background: #4f6aff;
+  border: 0;
+  border-radius: 7px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 10px 12px;
+  width: 100%;
+}
+
+.gc-auth-button:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+
+.gc-auth-secondary {
+  background: transparent;
+  color: #4f6aff;
+  margin-top: 8px;
+}
+
+.gc-demo-users {
+  border-top: 1px solid #dde2ec;
+  margin-top: 18px;
+  padding-top: 16px;
+}
+
+.gc-demo-users p {
+  color: #3a4455;
+  font-size: 12px;
+  font-weight: 800;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+}
+
+.gc-demo-users div {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.gc-demo-button {
+  background: #f8fafc;
+  border: 1px solid #c8d0de;
+  border-radius: 7px;
+  color: #0d1117;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 8px 10px;
+}
+
+.gc-demo-button:hover {
+  background: #eef1f8;
+  border-color: #4f6aff;
+}
+
+.gc-auth-message {
+  border-radius: 7px;
+  display: none;
+  font-size: 13px;
+  margin-top: 14px;
+  padding: 10px 12px;
+}
+
+.gc-auth-message.is-visible {
+  display: block;
+}
+
+.gc-auth-message.is-error {
+  background: #dc262617;
+  color: #b91c1c;
+}
+
+.gc-auth-message.is-info {
+  background: #4f6aff17;
+  color: #314fd6;
+}
+
+.gc-auth-meta {
+  color: #6b7a94;
+  font-size: 12px;
+  margin-top: 16px;
+}
+
+.gc-auth-userbar {
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #dde2ec;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px #0d111712;
+  display: flex;
+  gap: 10px;
+  padding: 7px 8px 7px 12px;
+  position: fixed;
+  right: 16px;
+  top: 60px;
+  z-index: 1000;
+}
+
+.gc-auth-userbar span {
+  color: #3a4455;
+  font-size: 12px;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gc-auth-userbar button {
+  background: #f2f4f8;
+  border: 1px solid #dde2ec;
+  border-radius: 7px;
+  color: #0d1117;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 8px;
+}
+
+.gc-role-hidden {
+  display: none !important;
+}
